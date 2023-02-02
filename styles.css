@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+
+:root{
+    --black : #272d3b ; 
+    --red : #ed176f; 
+    --coral : #f7817f; 
+    --gradient : linear-gradient(90deg,var(--red),var(var(--coral))); 
+
+
+}
+
+
+
+
+
+*{
+    font-family: 'Nunito',sans-serif;
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    border: none;outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .05s linear;
+
+}
+
+
+*::selection{
+    background: var(--red);
+    color: #fff;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+
+
+}
+
+
+
+
+/*############### header the navigation bar ##########  */
+
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background : var(--black); 
+    z-index:100; 
+    padding:2rem 9%; 
+    border-bottom: .1rem solid #fff3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .navbar a{
+   font-size: 2rem; 
+   margin-left: 2.5rem;
+   color: #fff;
+
+}
+
+header .navbar a:hover{
+    color: var(--red);
+}
+
+#menu-bar{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* -------- header media ------------  */
+
+@media (max-width : 991px){
+    html {
+        font-size: 55%; 
+
+    };
+
+    header{
+        padding: 2rem 4% ;
+    }
+
+}
+@media (max-width : 768px){
+    #menu-bar{
+        display: block;
+    }
+
+    header .navbar{
+        position : absolute; 
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+        border-top : .1rem solid #fff5;
+        padding: 1rem 0;
+        display: none;
+    }
+
+        header .navbar.active{
+            display: block;
+        }
+
+     header .navbar a{
+        padding: 1rem 2rem;
+        display: block;
+        margin: 0;
+        
+     }
+
+       header .navbar a:hover{
+        background-color: #404a62;
+        color: #fff;
+       }
+
+
+}
+@media (max-width : 450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+body{
+    height: 300rem;
+}
+
+
+
+
+
+
+
+
+
+
+
