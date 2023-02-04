@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>App Landing Page</title>
 
 </head>
@@ -33,6 +35,29 @@
 
 
 
+<!--  -->
+
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>app landing page</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nulla fugit cupiditate repellendus iste cumque quos ea quibusdam distinctio reiciendis doloremque quidem, expedita consequuntur incidunt, praesentium, facere in. Sunt, fugit.</p>
+        <a href="#" class="btn" id="#btn">get started</a>
+    </div>
+
+
+    <div class="swiper image-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/shot-01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/shot-02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/shot-03.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/shot-04.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/shot-05.jpg" alt=""></div>
+        </div>
+    </div>
+
+
+</section>
 
 
 
@@ -41,6 +66,34 @@
 
 
 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".image-slider", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+ loop  : true , 
+ autoplay : {
+    delay : 2000, 
+    disableOnInteraction : false , 
+
+ }
+});
+
+
+</script>
 
 
 <script src = "scripts.js"></script>
