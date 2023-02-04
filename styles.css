@@ -259,6 +259,108 @@ section {
 
 
 
+/* feature section  */
+
+.heading{
+    text-align: center;
+    color: transparent;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+
+
+
+}
+
+.features .box-container {
+    display: flex ;
+    justify-content:center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+
+}
+
+.features .box-container .box{
+    background-color: red;
+    flex: 1 1 30rem; 
+    border-radius: .5rem;
+    background:rgba(237,23,111,.05);
+    cursor: pointer;
+    margin: 1rem;
+    text-align: center;
+
+}
+
+
+.features .box-container .box i {
+    color: var(--red);
+    font-size: 5rem;
+    padding: 1rem;
+
+}
+
+.features .box-container .box h3{
+    color: var(--black);
+    font-size: 2.4rem;
+    padding: 1rem;
+
+}
+
+.features .box-container .box p{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+
+}
+
+.features .box-container .box:hover{
+    background: var(--gradient);
+}
+
+.features .box-container .box:hover > *{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 991px){
+ 
+}
+@media (max-width : 768px){
+ .heading { 
+    font-size: 3rem;
+ }
+ 
+
+}
+@media (max-width : 450px){
+   
+}
+
+
+
 
 
 
