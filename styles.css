@@ -383,36 +383,6 @@ section.about .row .content p{
     
 }
 
-.about .row .content .buttons a:last-child{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width : 991px){
  
 }
@@ -434,6 +404,67 @@ section.about .row .content p{
 @media (max-width : 450px){
 
      
+}
+
+
+
+/* usage section  */
+
+.usage .row {
+    display: flex;
+    align-items: center;
+
+}
+
+.usage .row .divider{
+    padding: 0 1rem;
+
+
+}
+
+.usage .row .box-container .box{
+    padding: 1rem;
+}
+
+.usage .row .box-container .box i{
+    color: var(--red);
+    padding : 1rem 0 ; 
+    font-size: 4.5rem;
+
+}
+
+.usage .row .box-container .box h3{
+    color: var(--black);
+    padding : 1rem 0 ; 
+    font-size: 2.5rem;
+    
+}
+
+.usage .row .box-container .box p{
+    color: #666;
+    padding: 1rem 0 ;
+    font-size: 1.7rem;
+
+}
+
+
+.usage .row .box-container:first-child{
+    text-align: right;
+}
+
+@media (max-width : 991px){
+
+    .usage .row{
+        flex-flow: column;
+
+    }
+       .usage .row .divider{
+        display: none;
+       }
+    
+.usage .row .box-container .box{
+    text-align: center;
+}
 }
 
 
