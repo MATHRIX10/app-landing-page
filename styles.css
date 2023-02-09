@@ -7,6 +7,7 @@
     --red : #ed176f; 
     --coral : #f7817f; 
    --gradient:linear-gradient(90deg, var(--red), var(--coral));
+    --box-shadow :0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
 
 
 }
@@ -466,6 +467,139 @@ section.about .row .content p{
     text-align: center;
 }
 }
+
+
+
+
+/* review section  */
+
+.review .box-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.review .box-container .box{
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem;
+    flex: 1 1 33rem;
+    border-radius: .5rem;
+
+    max-width: 33rem;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+
+
+}
+
+
+.review .box-container .box img{
+    height: 13rem;
+
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+}
+
+
+.review .box-container .box h3{
+   font-size: 2.5rem; 
+   color: var(--black);
+
+}
+
+
+.review .box-container .box p{
+   font-size: 1.4rem; 
+   color: #666;
+
+   line-height: 2;
+   padding: 1rem 0;
+
+}
+
+
+.review .box-container .box .stars i {
+    padding: 1rem .1rem ;
+    font-size: 2rem;
+    font-size: 2rem;
+    color: #ffa534;
+}
+
+
+
+/* pricing section  */
+
+.pricing .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+.pricing .box-container .box{
+    flex: 1 1 33rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem 0;
+    box-shadow: var(--box-shadow);
+    border : .1rem solid rgba(0,0,0,.3);
+     max-width: 33rem;
+}
+
+.pricing .box-container .box .price{
+    font-size: 5rem;
+    color: var(--black);
+    font-weight: bolder;
+    
+}
+
+
+.pricing .box-container .box .price span{
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.pricing .box-container .box h3{
+    color: #fff;
+    background: var(--gradient);
+    font-size: 3rem;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+   
+
+
+}
+
+.pricing .box-container .box ul{
+    list-style: none;
+    padding: 2rem 0;
+    border-bottom: .1rem solid var(--red);
+
+    
+
+}
+
+
+.pricing .box-container .box ul li{
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    color: #666;
+
+}
+
+.pricing .box-container .box .btn{
+    margin-top: 2rem;
+}
+ 
+
+
+
+
 
 
 
