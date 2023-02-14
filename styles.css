@@ -484,10 +484,10 @@ section.about .row .content p{
     text-align: center;
     margin: 1rem;
     padding: 2rem;
-    flex: 1 1 33rem;
+    flex: 1 1 30rem;
     border-radius: .5rem;
 
-    max-width: 33rem;
+    max-width: 30rem;
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
 
 
@@ -542,13 +542,13 @@ section.about .row .content p{
 }
 
 .pricing .box-container .box{
-    flex: 1 1 33rem;
+    flex: 1 1 30rem;
     text-align: center;
     margin: 1rem;
     padding: 2rem 0;
     box-shadow: var(--box-shadow);
     border : .1rem solid rgba(0,0,0,.3);
-     max-width: 33rem;
+     max-width: 30rem;
 }
 
 .pricing .box-container .box .price{
@@ -599,6 +599,64 @@ section.about .row .content p{
 
 
 
+/* contact section  */
+
+.contact{
+    background: linear-gradient(#fff 50%, var(--black) 50.1%);
+}
+
+.contact form{
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 3rem rgba(0,0,0,.1);
+
+}
+
+.contact form .inputBox{
+    position : relative; 
+  
+
+}
+
+.contact form .inputBox input , .contact form .inputBox textarea{
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-bottom: .2rem solid rgba(0,0,0,.3);
+    font-size: 1.7rem;
+    text-transform: none;
+
+
+}
+
+.contact form .inputBox textarea{
+    resize: none;
+    height: 15rem;
+
+}
+
+
+.contact form .inputBox input:focus ,
+.contact form .inputBox textarea:focus{
+   border-color: var(--red);
+}
+
+
+.contact form .inputBox label{
+   font-size: 1.7rem; 
+   position: absolute;
+   top: 2.3rem;
+   left: 0;
+}
+
+.contact form .inputBox input:focus ~ label,
+.contact form .inputBox textarea:focus ~ label,
+.contact form .inputBox input:valid ~ label,
+.contact form .inputBox textarea:valid ~ label{
+   top: -.4rem; 
+   font-size: 1.5rem;
+   color: var(--red);
+}
 
 
 
