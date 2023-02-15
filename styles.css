@@ -665,6 +665,7 @@ section.about .row .content p{
 .footer{
     text-align: center;
     background:var(--black);
+    border-top:.1rem solid  #4d5974;
     
 }
 
@@ -686,6 +687,20 @@ cursor: pointer;
     background: var(--red);
     transform: scale(1.05);
     transition: linear .2s;
+}
+
+
+.footer .credit {
+    color : #eee; 
+    padding : 1.5rem 1rem ; 
+    font-weight: normal;
+    font-size: 2rem;
+
+}
+
+
+.footer .credit span{
+    color: var(--red);
 }
 
 
